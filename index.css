@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700');
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	
+    display: flex;
+    justify-content:  center;
+   
+
+}
+ul>li{
+    display: inline-block;
+    
+}
+ul>li>a{
+margin: 0;
+text-decoration: none;
+display: block;
+padding: 1em;
+color: white;
+font-family:'Titillium Web', sans-serif;
+}
+.menu{
+display: flex;
+
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+padding: 10px 75px 0 0;
+  
+-webkit-flex-flow: row wrap;
+justify-content: flex-end;
+}
+.logomenu{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 611px;
+    top: 10px;
+}
+video{
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    position: relative;
+    top: -66px;
+}
+.titulologo{
+    color: white;
+    position: relative;
+    left: -600px;
+    top: 18px;
+    font-family:'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+.texto1video{
+    top: 244px;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left: 488px;
+    font-family:'Titillium Web', sans-serif;
+}
+.texto2video{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 244px;
+    left: 625px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.texto3video{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 350px;
+    left: 600px;
+}
+.texto4video{
+    font-family:'Titillium Web', sans-serif; 
+    color: white;
+    position: absolute;
+    top: 388px;
+    left: 622px;
+    font-size: 20px;
+}
+main section.cont1{
+    width: 100%;
+}
+main section.cont1 .cont2{
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px 0 40px 15%;
+}
+main section.cont1 .cont2 .cont3{
+    width: 650px;
+    overflow: hidden;
+}
+main section.cont1 .cont2 .cont3 .cont4{
+    display: flex;
+    flex-direction: column;
+}
+main section.cont1 .cont2 .carro{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+main section.cont1 .cont2 .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    background: #ecf0f1;
+}
+main section.con1 .cont2 .actions img {
+    width: 20px;
+    margin: 0 4px;
+}
+main section .actions a{
+    text-decoration: none;
+    font-family:'Titillium Web', sans-serif;
+    color:gray;
+}
+main section.cont1 .cont2 .body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+main section.cont1 .cont2 .body .left {
+    width: 620px;
+}
+.tibody{
+    font-weight: 400;
+}
+strong{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    font-family: 'Titillium Web', sans-serif;
+}
+.parrafo{
+    font-family: 'Titillium Web', sans-serif;
+    color: gray;
+}
+main .galeriadefotos{
+    display: grid;
+    background: var(--secondary);
+    grid-template-columns: repeat(5,180px);
+    grid-template-rows: auto 180px 180px;
+    justify-content: center;
+    padding-bottom: 30px;
+    background-color: rgba(235, 233, 233, 0.322);
+}
+main .galeriadefotos h2{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding: 20px 0;
+}
+main .galeriadefotos .item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+main .galeriadefotos .imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+    z-index: -1;
+}
+main .galeriadefotos .mascara{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0);
+    transition: .5s;
+}
+main .galeriadefotos .mascara img{
+    width: 50px;
+    transform: scale(0);
+    opacity: 0;
+    transition-duration: .5s;
+    transition-delay: .3s;
+}
+main .galeriadefotos .item:hover .mascara{
+    background:rgba(1,14,26,.8);
+}
+main .galeriadefotos .item:hover .mascara img{
+    opacity: 1;
+    transform: scale(1);
+}
+main .galeriadefotos .item:hover .imagen{
+    transform:scale(1.1);
+}
+footer{
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0
+}
